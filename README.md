@@ -16,7 +16,7 @@ docker build -t scala-sandbox ws-sandbox-scala/.devcontainer
 You can use the image in any directory like below.
 
 ```bash
-docker run -it --mount src="$(pwd)",target=/opt/workspace,type=bind -w /opt/workspace scala-sandbox
+docker run -it --rm --mount src="$(pwd)",target=/opt/workspace,type=bind -w /opt/workspace scala-sandbox
 ```
 
 ## OSS
